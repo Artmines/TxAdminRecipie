@@ -25,6 +25,11 @@ tasks:
   - action: query_database
     file: ./tmp/pulsar/pulsar.sql
 
+  # Fill in {{dbConnectionString}} etc in server.cfg ({{svLicense}} is auto-replaced by txAdmin separately)
+  - action: replace_string
+    mode: all_vars
+    file: ./server.cfg
+
   # STANDALONE / cfx defaults (mapmanager, spawnmanager, yarn, fivem-map-hipster, etc)
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data
