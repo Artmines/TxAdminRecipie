@@ -250,13 +250,6 @@ tasks:
     src: ./tmp/pulsar_inventory.zip
 
   - action: download_file
-    path: ./tmp/pulsar_weapons.zip
-    url: https://github.com/PulsarFW/pulsar_weapons/releases/latest/download/pulsar_weapons.zip
-  - action: unzip
-    dest: ./resources/[pulsar]
-    src: ./tmp/pulsar_weapons.zip
-
-  - action: download_file
     path: ./tmp/pulsar_businesses.zip
     url: https://github.com/PulsarFW/pulsar_businesses/releases/latest/download/pulsar_businesses.zip
   - action: unzip
