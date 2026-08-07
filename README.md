@@ -63,7 +63,7 @@ This is **not** a full dump — it's trimmed. A number of tables are self-provis
 
 - If a `pulsar_*` resource gets renamed, added, or removed from `resources.cfg`, update `pulsar.yaml`'s task list (and `resources.cfg` itself) to match — the recipe doesn't discover resources automatically, it's an explicit list.
 - Every `pulsar_*` download depends on that resource's GitHub Actions release workflow having actually run and published a `<name>.zip` asset. If a resource has no release yet, its `download_file` task will fail the whole recipe at that step.
-- This recipe's own `pulsar.yaml` self-downloads from `https://github.com/PulsarFW/txAdminRecipe` (matching every other `pulsar_*` resource's self-hosted-repo pattern) — that repo needs to exist and contain this folder's contents (`pulsar.yaml`, `pulsar.sql`, `server.cfg`, `resources.cfg`) at its root for the recipe to actually resolve when deployed via URL in txAdmin.
+- This recipe's own `pulsar.yaml` self-downloads from `https://github.com/Artmines/TxAdminRecipie` (matching every other `pulsar_*` resource's self-hosted-repo pattern) — that repo needs to contain this folder's contents (`pulsar.yaml`, `pulsar.sql`, `server.cfg`, `resources.cfg`) at its root. Deploy via URL in txAdmin using the raw file link: `https://raw.githubusercontent.com/Artmines/TxAdminRecipie/main/pulsar.yaml`
 
 ---
 
