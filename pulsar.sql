@@ -7,9 +7,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE DATABASE IF NOT EXISTS `pulsarfw` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */;
-USE `pulsarfw`;
-
 CREATE TABLE IF NOT EXISTS `app_profile_history` (
   `sid` bigint(20) unsigned NOT NULL,
   `date` datetime NOT NULL DEFAULT current_timestamp(),
