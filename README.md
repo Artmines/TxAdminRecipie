@@ -39,7 +39,7 @@ Deploys `server.cfg`, `resources.cfg`, `pulsar.sql`, and every `pulsar_*` resour
 
 - [`pulsar_weapons`](https://github.com/PulsarFW/pulsar_weapons) (274MB custom weapon pack) — install manually.
 - [`pulsar_assets`](https://github.com/PulsarFW/pulsar_assets) (mining node props, hotel room interior) — copy in manually.
-- `sv_licenseKey` / `steam_webApiKey` in `server.cfg` — placeholders, get real ones from [Cfx registration keys](https://portal.cfx.re/servers/registration-keys) and your [Steam API key](https://steamcommunity.com/dev/apikey).
+- `steam_webApiKey` in `server.cfg` — txAdmin has no way to collect this during deploy, add your own from your [Steam API key](https://steamcommunity.com/dev/apikey) page. (`sv_licenseKey` and the DB connection string *are* filled in automatically from what you enter in txAdmin's deploy UI — get a license key at [Cfx registration keys](https://portal.cfx.re/servers/registration-keys) if you don't have one yet.)
 - Discord webhooks and other integration tokens in `server.cfg` — blank, fill in what you use.
 
 ---
